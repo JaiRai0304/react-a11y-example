@@ -1,16 +1,16 @@
 import React from "react";
 
 const Header = () => (
-  <header className=".navbar">
+  <header className="navbar">
     <div>
       <img
-        className="-oneX-logo"
-        src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/794/landscape/a11y.png"
-        alt="Deque Logo"
+        className="logo"
+        src="https://a11yproject.com/img/social.png"
+        alt="A11y Logo"
       />
       <img
-        className="-oneX-logo"
-        src="https://icon-library.net/images/react-icon/react-icon-15.jpg"
+        className="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
         alt="React Logo"
       />
     </div>

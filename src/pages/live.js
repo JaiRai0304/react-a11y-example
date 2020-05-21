@@ -4,18 +4,19 @@ import Announcer from "react-a11y-announcer";
 const LazyComponent = React.lazy(() => import("../components/alertstandard"));
 class Live extends Component {
   state = {
-    a11yMessage: ""
+    announcement: "",
+    a11yMessage: "",
   };
   constructor(props) {
     super(props);
     this.onInputClick = this.onInputClick.bind(this);
-    this.state = { announcement: " ", lazyLoad: false };
+    this.state = { announcement: "", a11yMessage: "", lazyLoad: false };
   }
-  handleClick() {
+  handleClick = () => {
     this.setState({
-      announcement: "Here's a new announcement!"
+      announcement: "Here's a new announcement!",
     });
-  }
+  };
   onInputClick() {
     this.setState({ lazyLoad: true });
   }
@@ -28,26 +29,36 @@ class Live extends Component {
         <LiveAnnouncer>
           <LiveMessage message={this.state.a11yMessage} aria-live="assertive" />
           <button
+            className="btn btn-primary btn-large"
             onClick={() => {
-              this.setState({ a11yMessage: "Mark is Logged In" });
+              this.setState({ a11yMessage: "Mark is awesome!" });
             }}
           >
             Press me
           </button>
         </LiveAnnouncer>
+
         <h2>React A11y Announcer</h2>
         <p>This example shows the usage of the React A11y Announcer Package</p>
         <Announcer text={this.state.announcement}> </Announcer>
         <div className="App-header">
-          <button type="button" onClick={this.handleClick}>
+          <button
+            className="btn btn-primary btn-large"
+            type="button"
+            onClick={this.handleClick}
+          >
             Trigger new announcement
           </button>
         </div>
-
         <h2>Lazy Loading</h2>
         <p>This shows off the use of lazy loading a component.</p>
 
-        <button onClick={this.onInputClick}>Show Input</button>
+        <button
+          className="btn btn-primary btn-large"
+          onClick={this.onInputClick}
+        >
+          Show Input
+        </button>
         {this.state.lazyLoad ? (
           <Suspense fallback={<div>Loading....</div>}>
             <LazyComponent />
