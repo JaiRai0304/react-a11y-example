@@ -1,5 +1,4 @@
 import React from "react";
-import { useAlert } from "react-alert";
 class CustomTag extends React.Component {
   constructor(props) {
     super(props);
