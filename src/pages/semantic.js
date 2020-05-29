@@ -61,7 +61,6 @@ class Semantic extends Component {
           tabIndex="0"
           role="button"
           onClick={this.handleClick}
-          onKeyPress={this.handleClick}
         >
           Keyboard Button
         </div>
