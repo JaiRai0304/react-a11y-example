@@ -8,8 +8,6 @@ class CustomTag extends React.Component {
   render() {
     return (
       <div
-        role="button"
-        tabIndex="0"
         onClick={this.onManualClick}
         className="btn btn-primary btn-large"
       >
