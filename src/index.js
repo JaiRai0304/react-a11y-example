@@ -12,9 +12,6 @@ import live from "./pages/live";
 import home from "./pages/home";
 
 function App() {
-  useEffect(() => {
-    document.querySelector(".App").focus();
-  });
   return (
     <div className="App" tabindex="-1">
       <Header />
@@ -51,6 +48,9 @@ function App() {
       <Footer />
     </div>
   );
+  function handleFocus() {
+    document.querySelector(".App").focus();
+  }
 }
 
 const rootElement = document.getElementById("root");

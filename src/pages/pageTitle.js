@@ -28,7 +28,7 @@ class PageTitle extends Component {
   }
 
   componentDidMount() {
-    document.title = "Mark is awesome";
+    //document.title = "Mark is awesome";
   }
 }
 export default PageTitle;

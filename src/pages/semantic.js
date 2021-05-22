@@ -48,7 +48,7 @@ class Semantic extends Component {
           button and tabindex after the fact, however it does not render in
           react.{" "}
         </p>
-        <Customtag role="button" tabIndex="0" />
+        <Customtag />
         <button className="btn btn-primary btn-large">Click me!</button>
 
         <h2>Click Events</h2>

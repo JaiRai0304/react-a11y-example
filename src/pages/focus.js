@@ -14,6 +14,9 @@ const customStyles = {
   }
 };
 class FocusManage extends Component {
+  componentDidMount() {
+    document.querySelector(".App").focus();
+  }
   constructor(props) {
     super(props);
     this.onInputClick = this.onInputClick.bind(this);
