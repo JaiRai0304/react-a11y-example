@@ -5,13 +5,8 @@ const Header = () => (
     <div>
       <img
         className="logo"
-        src="https://a11yproject.com/img/social.png"
-        alt="A11y Logo"
-      />
-      <img
-        className="logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-        alt="React Logo"
+        src="https://www.deque.com/wp-content/uploads/2020/01/Picture1-700x300.png"
+        alt="React and Accessibility Reaction Logo"
       />
     </div>
   </header>

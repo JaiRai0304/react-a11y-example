@@ -22,15 +22,6 @@ class PageTitle extends Component {
             using <b>document.title.</b>
           </p>
           <br />
-          <h2>React Helmet</h2>
-          <p>
-            This reusable React component will manage all of your changes to the
-            document head. You can use this as well to set your title of your
-            page as well.
-          </p>
-          <a href="https://github.com/nfl/react-helmet">
-            React Helmet Documentation
-          </a>
         </div>
       </DocumentTitle>
     );

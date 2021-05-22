@@ -18,15 +18,17 @@ function App() {
       <Router>
         <div className="main">
           <div className="sidenav">
+            <span class="navHeader">React A11y Tester</span>
+            <hr />
             <ul>
               <li>
                 <Link to="/home">Home</Link>
               </li>
               <li>
-                <Link to="/focus">Focus Management</Link>
+                <Link to="/pageTitle">Page Title</Link>
               </li>
               <li>
-                <Link to="/pageTitle">Page Title</Link>
+                <Link to="/focus">Focus Management</Link>
               </li>
               <li>
                 <Link to="/semantic">HTML Semantics</Link>

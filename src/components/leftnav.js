@@ -9,10 +9,10 @@ const leftNav = () => (
     <div class="sidenav">
       <ul>
         <li>
-          <Link to="/focus">Focus Management</Link>
+          <Link to="/pageTitle">Page Title</Link>
         </li>
         <li>
-          <Link to="/pageTitle">Page Title</Link>
+          <Link to="/focus">Focus Management</Link>
         </li>
         <li>
           <Link to="/semantic">HTML Semantics</Link>
