@@ -10,8 +10,8 @@ const customStyles = {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-  },
+    transform: "translate(-50%, -50%)"
+  }
 };
 class FocusManage extends Component {
   constructor(props) {

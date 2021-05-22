@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./styles.css";
@@ -12,8 +12,11 @@ import live from "./pages/live";
 import home from "./pages/home";
 
 function App() {
+  useEffect(() => {
+    document.querySelector(".App").focus();
+  });
   return (
-    <div className="App">
+    <div className="App" tabindex="-1">
       <Header />
       <Router>
         <div className="main">

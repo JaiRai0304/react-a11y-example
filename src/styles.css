@@ -51,7 +51,6 @@ btn-primary:focus {
   font-size: 28px;
   display: flex;
   height: calc(100vh - 230px);
-  overflow: scroll;
 }
 
 /* The sidebar menu */
