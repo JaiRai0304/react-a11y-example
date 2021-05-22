@@ -7,10 +7,7 @@ class CustomTag extends React.Component {
   onManualClick() {}
   render() {
     return (
-      <div
-        onClick={this.onManualClick}
-        className="btn btn-primary btn-large"
-      >
+      <div onClick={this.onManualClick} className="btn btn-primary btn-large">
         Click me!
       </div>
     );

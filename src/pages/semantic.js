@@ -12,7 +12,7 @@ class Semantic extends Component {
   render() {
     return (
       <div>
-        <h1>Keyboard Navigation</h1>
+        <h1>Semantic HTML</h1>
         <h2>Extra Divs Added</h2>
         <p>
           In this example below, a component is created with data being added to

@@ -1,12 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Alertstandard extends Component {
-  render() {
-    return (
-      <span className="alertText" aria-live="assertive">
-        THIS IS A LAZY LOADED COMPONENT
-      </span>
-    );
-  }
-}
+const Alertstandard = () => (
+  <span className="alertText" aria-live="assertive">
+    THIS IS A LAZY LOADED COMPONENT
+  </span>
+);
+
 export default Alertstandard;

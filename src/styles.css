@@ -41,7 +41,12 @@ ul {
 button {
   width: fit-content;
 }
-
+button:focus,
+btn-primary:focus {
+  outline: none !important;
+  border: 1px solid black !important;
+  box-shadow: 0 0px 10px black;
+}
 .main {
   font-size: 28px;
   display: flex;
@@ -129,4 +134,12 @@ footer {
 
 .navHeader {
   font-size: 20px;
+}
+
+.fakeTable1 {
+  width: 199px;
+}
+
+.fakeTable2 {
+  width: 275px;
 }

@@ -1,13 +1,10 @@
 import React from "react";
 
-class TableHeader extends React.Component {
-  render() {
-    return (
-      <div>
-        <th>Name</th>
-        <th>Occupation</th>
-      </div>
-    );
-  }
-}
+const TableHeader = () => (
+  <div>
+    <th class="fakeTable1">Name</th>
+    <th class="fakeTable2">Occupation</th>
+  </div>
+);
+
 export default TableHeader;
