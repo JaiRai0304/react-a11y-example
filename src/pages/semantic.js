@@ -9,6 +9,14 @@ class Semantic extends Component {
   handleClick = () => {
     alert("This worked!");
   };
+  keyDown = (event) => {
+    console.log("event.key is", event.key);
+    console.log("event code is", event.code);
+    console.log("keycode is ", event.keyCode);
+    if (event.key === 'Enter' || event.key == '' || event.code === 'Space' || event.keyCode === 32) {
+      this.handleClick();
+    }
+  }
   render() {
     return (
       <div>
@@ -48,7 +56,7 @@ class Semantic extends Component {
           button and tabindex after the fact, however it does not render in
           react.{" "}
         </p>
-        <Customtag />
+        <Customtag/>
         <button className="btn btn-primary btn-large">Click me!</button>
 
         <h2>Click Events</h2>
@@ -64,6 +72,15 @@ class Semantic extends Component {
         >
           Keyboard Button
         </div>
+        {/* <div
+          class="btn btn-primary"
+          tabIndex="0"
+          role="button"
+          onClick={this.handleClick}
+          onKeyDown={this.keyDown}
+        >
+          Keyboard Button
+        </div> */}
         <button
           className="btn btn-primary btn-large"
           onClick={this.handleClick}

@@ -1,6 +1,8 @@
-import React from "react";
+import React,{Component} from "react";
 
-const home = () => (
+class Home extends Component {
+  render() {
+    return (
   <div>
     <h1>Example A11y React Application</h1>
     <p>
@@ -30,17 +32,27 @@ const home = () => (
     <p>React A11y Guidance: </p>
     <ul>
       <li>
-        <a href="https://reactjs.org/docs/accessibility.html">
+        <a href="https://reactjs.org/docs/accessibility.html" target="_blank" rel="noopener noreferrer">
           React Accessibility Documentation
         </a>
       </li>
       <li>
-        <a href="https://github.com/reactjs/react-a11y">React-A11y</a>
+        <a href="https://github.com/dequelabs/axe-core-npm/tree/develop/packages/react" target="_blank" rel="noopener noreferrer">
+          Axe-Core/React
+          </a>
       </li>
       <li>
-        <a href="https://github.com/dequelabs/react-axe">React-Axe</a>
+        <a href="https://www.npmjs.com/package/@axe-core/react" target="_blank" rel="noopener noreferrer">
+          React-Axe
+          </a>
       </li>
     </ul>
   </div>
-);
-export default home;
+    )
+  }
+  componentDidMount() {
+    document.title = "Home | React is awesome";
+  }
+  
+};
+export default Home;

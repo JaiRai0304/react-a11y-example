@@ -31,7 +31,7 @@ class Live extends Component {
           <button
             className="btn btn-primary btn-large"
             onClick={() => {
-              this.setState({ a11yMessage: "Mark is awesome!" });
+              this.setState({ a11yMessage: "React is awesome!" });
             }}
           >
             Press me

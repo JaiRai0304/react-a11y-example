@@ -2,7 +2,7 @@ import React from "react";
 
 const TableBody = () => (
   <div>
-    <td>Mark Steadman</td>
+    <td>Deque System</td>
     <td>Accessibility Advocate</td>
   </div>
 );

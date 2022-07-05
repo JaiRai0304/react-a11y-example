@@ -3,7 +3,7 @@ import DocumentTitle from "react-document-title";
 class PageTitle extends Component {
   render() {
     return (
-      <DocumentTitle title="Title Fixes Page">
+      <DocumentTitle title="Title using react-document-title">
         <div>
           <h1>Page Title Fixes</h1>
           <h2>React-Document-Title</h2>
@@ -28,7 +28,7 @@ class PageTitle extends Component {
   }
 
   componentDidMount() {
-    //document.title = "Mark is awesome";
+    //document.title = "React is awesome";
   }
 }
 export default PageTitle;
